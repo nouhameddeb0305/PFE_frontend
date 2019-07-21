@@ -1,0 +1,112 @@
+<div class="row">
+  <div class="col-lg-6">
+    <nb-card>
+      <nb-card-header>Default Inputs</nb-card-header>
+      <nb-card-body>
+        <div class="row full-name-inputs">
+          <div class="col-sm-6 input-group  input-group-sm">
+            <input type="text" placeholder="Nick" class="form-control"/>
+          </div>
+          <div class="col-sm-6 input-group  input-group-sm">
+            <input type="text" placeholder="Last Name" class="form-control"/>
+          </div>
+        </div>
+        <div class="input-group input-group-sm">
+          <input type="password" placeholder="Password" class="form-control"/>
+        </div>
+        <div class="input-group input-group-sm">
+          <input type="text" placeholder="Disabled input" class="form-control" disabled/>
+        </div>
+        <div class="input-group  input-group-sm">
+          <textarea rows="5" placeholder="Text Area" class="form-control"></textarea>
+        </div>
+        <div class="input-group input-group-sm">
+          <input type="text" placeholder="Small Input" class="form-control"/>
+        </div>
+      </nb-card-body>
+    </nb-card>
+
+    <nb-card>
+      <nb-card-header>Selects</nb-card-header>
+      <nb-card-body>
+        <div class="form-group">
+          <label>Simple Select</label>
+          <select class="form-control">
+            <option>Minsk</option>
+            <option>Gomel</option>
+            <option>Brest</option>
+            <option>Grodno</option>
+            <option>Mogilev</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Multiple Select</label>
+          <select multiple class="form-control">
+            <option>Item 1</option>
+            <option>Item 2</option>
+            <option>Item 3</option>
+            <option>Item 4</option>
+            <option>Item 5</option>
+          </select>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+
+  <div class="col-lg-6">
+    <nb-card>
+      <nb-card-header>Checkboxes & Radios</nb-card-header>
+      <nb-card-body>
+        <div class="row demo-checkboxes-radio">
+          <div class="demo-checkboxes col-sm-4">
+            <nb-checkbox>Checkbox 1</nb-checkbox>
+            <nb-checkbox [value]="true">Checkbox 2</nb-checkbox>
+
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="b-checkbox">
+              <label class="custom-control-label" for="b-checkbox">Bootstrap Checkbox</label>
+            </div>
+          </div>
+          <div class="demo-radio col-sm-4">
+            <label class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" name="customRadio">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Radio 1</span>
+            </label>
+            <label class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" name="customRadio" checked>
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Radio 2</span>
+            </label>
+            <label class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" name="customRadio">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Radio 3</span>
+            </label>
+          </div>
+          <div class="demo-disabled-checkbox-radio col-sm-4">
+            <nb-checkbox disabled>Disabled Checkbox</nb-checkbox>
+            <label class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" disabled>
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Disabled Radio</span>
+            </label>
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+    <nb-card>
+      <nb-card-header>Input Groups</nb-card-header>
+      <nb-card-body>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search for...">
+          <span class="input-group-append">
+            <button class="btn btn-danger input-group-text">
+              Search
+            </button>
+          </span>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>

@@ -1,0 +1,82 @@
+<nb-card>
+  <nb-card-header>
+    <p style="text-align:center">Articles</p>
+  </nb-card-header>
+
+  <nb-card-body>
+
+    <nb-accordion>
+      <nb-accordion-item #item>
+        <nb-accordion-item-header>
+          Recherche Avancée
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+          <div class="row full-name-inputs">
+            <div class ="form-group col-md-8 input-group-sm">
+              <div class="row full-name-inputs">
+                <div class="form-group col-md-6 input-group-sm">
+                  <label class="text-label" for="code">Référence:</label>
+                  <input class="form-control" type="text" [(ngModel)]="aNC.code">
+                </div>
+                <div class="form-group col-md-6 input-group-sm">
+                  <label class="text-label" for="name" >Désignation:</label>
+                  <input class="form-control" type="text" [(ngModel)]="aNC.name">
+                </div>
+              </div>
+              <div class="row full-name-inputs">
+                <div class="form-group col-md-4 input-group-sm">
+                  <label class="text-label" for="type">type:</label>
+                  <nb-select placeholder="Select"
+                             size="xsmall"
+                             outline status="info"
+                  >
+                    <nb-option   style="text-transform: capitalize;" *ngFor="let statinlist of type"  [value]="statinlist">{{statinlist}}</nb-option>
+                  </nb-select>
+                </div>
+                <div class="form-group col-md-4 input-group-sm">
+                  <label class="text-label" for="category">Catégorie:</label>
+                  <input class="form-control" type="text" [(ngModel)]="aNC.category">
+                </div>
+                <div class="form-group col-md-4 input-group-sm">
+                  <label class="text-label" for="origin" >Origine:</label>
+                  <input class="form-control" type="text" [(ngModel)]="aNC.origin">
+                </div>
+              </div>
+            </div>
+            <div class ="form-group col-md-4 input-group-sm">
+              <div class="row full-name-inputs">
+                <div class="form-group col-md-6 input-group-sm">
+                  <label class="text-label" for="purchaseCost" >Coût d'achat:</label>
+                  <input class="form-control" type="number" >
+                </div>
+                <div class="form-group col-md-6 input-group-sm">
+                  <label class="text-label" for="productionCost" >Coût de production:</label>
+                  <input class="form-control" type="number" >
+                </div>
+              </div>
+              <div class="row full-name-inputs">
+                <div class="form-group col-md-4 input-group-sm">
+                  <label class="text-label" for="unit" >Unité:</label>
+                  <input class="form-control" type="number" >
+                </div>
+                <div class="form-group col-md-8 input-group-sm">
+                  <label class="text-label" for="quantityStock" >Quantité en stock:</label>
+                  <input class="form-control" type="number" >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="text-align: right">
+            <button nbButton (click)="search()">Rechercher</button>
+          </div>
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+    </nb-accordion>
+
+    <button (click)="openWindowForm()" nbButton>Ajouter Article</button>
+    <ng2-smart-table [settings]="settings" [source]="source" (deleteConfirm)="onDeleteConfirm($event)" (custom)="onCustom($event)">
+    </ng2-smart-table>
+  </nb-card-body>
+</nb-card>
+

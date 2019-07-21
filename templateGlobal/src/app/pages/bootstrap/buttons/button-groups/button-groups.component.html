@@ -1,0 +1,54 @@
+<nb-card>
+  <nb-card-header>Button Groups</nb-card-header>
+  <nb-card-body>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="example-container">
+          <div class="container-title divided-button-group">Divided Button Group</div>
+          <div class="btn-group btn-group-toggle btn-divided-group btn-outline-divided-group btn-group-full-width btn-divided-checkbox-group "
+            data-toggle="buttons">
+            <label ngbButtonLabel class="btn btn-outline-success btn-icon" [class.active]="dividedCheckboxModel.monday">
+              <input ngbButton type="checkbox" [(ngModel)]="dividedCheckboxModel.monday"> <i
+              class="nb-arrow-thin-down"></i>
+            </label>
+            <label ngbButtonLabel class="btn btn-outline-success btn-icon" [class.active]="dividedCheckboxModel.tuesday">
+              <input ngbButton type="checkbox" [(ngModel)]="dividedCheckboxModel.tuesday"> <i
+              class="nb-arrow-thin-up"></i>
+            </label>
+            <label ngbButtonLabel class="btn btn-outline-success btn-icon" [class.active]="dividedCheckboxModel.wednesday">
+              <input ngbButton type="checkbox" [(ngModel)]="dividedCheckboxModel.wednesday"> <i class="nb-arrow-thin-left"></i>
+            </label>
+            <label ngbButtonLabel class="btn btn-outline-success btn-icon" [class.active]="dividedCheckboxModel.thursday">
+              <input ngbButton type="checkbox" [(ngModel)]="dividedCheckboxModel.thursday"> <i
+              class="nb-arrow-thin-right"></i>
+            </label>
+            <label ngbButtonLabel class="btn btn-outline-success btn-icon" [class.active]="dividedCheckboxModel.friday">
+              <input ngbButton type="checkbox" [(ngModel)]="dividedCheckboxModel.friday"> <i class="nb-arrow-left"></i>
+            </label>
+            <label ngbButtonLabel class="btn btn-outline-success btn-icon" [class.active]="dividedCheckboxModel.saturday">
+              <input ngbButton type="checkbox" [(ngModel)]="dividedCheckboxModel.saturday"> <i
+              class="nb-arrow-right"></i>
+            </label>
+          </div>
+        </div>
+        <div class="example-container">
+          <div class="container-title">Divided Button Group</div>
+          <div class="row">
+            <div [(ngModel)]="dividedButtonGroupOne" ngbRadioGroup
+                 class="btn-group btn-group-toggle btn-divided-group btn-outline-divided-group btn-group-full-width col-md-12">
+              <label ngbButtonLabel class="btn btn-outline-primary">
+                <input ngbButton type="radio" value="left"> Left
+              </label>
+              <label ngbButtonLabel class="btn btn-outline-primary">
+                <input ngbButton type="radio" value="middle"> Middle
+              </label>
+              <label ngbButtonLabel class="btn btn-outline-primary">
+                <input ngbButton type="radio" value="right"> Right
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card>

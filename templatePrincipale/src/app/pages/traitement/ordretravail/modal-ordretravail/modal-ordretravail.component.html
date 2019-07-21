@@ -1,0 +1,197 @@
+<div class="col-md-12 col-lg-12" style="width:950px; height: 450px">
+  <div class="row">
+    <div class="col-lg-12" style="width:600px; height: 300px">
+      <nb-card>
+        <nb-card-body>
+          <div class="row full-name-inputs">
+
+            <div class="input-group col-md-4 col-lg-3 input-group-sm">
+              <input type="number" placeholder="N° Demande d'intervention" class="form-control"
+                     [(ngModel)]="representantCommercialMoral.matriculeFiscale"/>
+            </div>
+            <div class="input-group col-md-4 col-lg-3 input-group-sm">
+              <input type="number" placeholder="N° Code machine" class="form-control"
+                     [(ngModel)]="representantCommercialMoral.numRegistreCommerce"/>
+            </div>
+          </div>
+
+          <div class="demo-radio col-sm-3">
+            <table>
+              <tr>
+                <td>
+                  <label>Module:</label>
+                </td>
+                <td>
+                  <label class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" name="customRadio" checked>
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">GPAO</span>
+                  </label>
+                </td>
+                <td>
+                  <label class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" name="customRadio">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">SAV</span>
+                  </label>
+                </td>
+                <td>
+                  <label class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" name="customRadio">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Interne</span>
+                  </label>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+            <div class="row full-name-inputs">
+            <div class="input-group col-md-4 col-lg-3 input-group-sm">
+              <input type="text" placeholder="Demandeur" class="form-control"
+                     [(ngModel)]="representantCommercialMoral.numRegistreCommerce"/>
+            </div>
+              <div class="input-group col-md-4 col-lg-3 input-group-sm">
+                <input type="number" placeholder="N° Téléphone" class="form-control"
+                       [(ngModel)]="representantCommercialMoral.siteWeb"/>
+              </div>
+          </div>
+
+
+          <div class="row full-name-inputs">
+          <div class="form-group col-md-6 col-lg-3 input-group-sm">
+            <select class="form-control" hero placeholder="Type maintenance" status="info"
+                    size="xsmall"    [(ngModel)]="representantCommercialMoral.antecedent"><option >Type maintenance</option>
+              <option value="Faible" >Maintenance préventive</option>
+              <option value="Moyenne" >Maintenance corrective</option>
+              <option value="Elevée" >Maintenance conditionnelle</option>
+            </select>
+          </div>
+            <div class="form-group col-md-6 col-lg-3 input-group-sm">
+              <select class="form-control" hero placeholder="Criticité" status="info"
+                      size="xsmall"    [(ngModel)]="representantCommercialMoral.antecedent"><option >Criticité</option>
+                <option value="Faible" >Criticité faible</option>
+                <option value="Moyenne" >Criticité moyenne</option>
+                <option value="Elevée" >Criticité élevée</option>
+                <option value="Très élevée" >Criticité très élevée</option>
+              </select>
+            </div>
+
+          </div>
+
+            <div class="demo-radio col-sm-3">
+              <table>
+                <tr>
+                  <td>
+                    <label>Niveau maintenance:</label>
+                  </td>
+                  <td>
+                    <label class="custom-control custom-radio">
+                      <input type="radio" class="custom-control-input" name="customRadio" checked>
+                      <span class="custom-control-indicator"></span>
+                      <span class="custom-control-description">1</span>
+                    </label>
+                  </td>
+                  <td>
+                    <label class="custom-control custom-radio">
+                      <input type="radio" class="custom-control-input" name="customRadio">
+                      <span class="custom-control-indicator"></span>
+                      <span class="custom-control-description">2</span>
+                    </label>
+                  </td>
+                  <td>
+                    <label class="custom-control custom-radio">
+                      <input type="radio" class="custom-control-input" name="customRadio">
+                      <span class="custom-control-indicator"></span>
+                      <span class="custom-control-description">3</span>
+                    </label>
+                  </td>
+                  <td>
+                    <label class="custom-control custom-radio">
+                      <input type="radio" class="custom-control-input" name="customRadio">
+                      <span class="custom-control-indicator"></span>
+                      <span class="custom-control-description">4</span>
+                    </label>
+                  </td>
+                  <td>
+                    <label class="custom-control custom-radio">
+                      <input type="radio" class="custom-control-input" name="customRadio">
+                      <span class="custom-control-indicator"></span>
+                      <span class="custom-control-description">5</span>
+                    </label>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+          <div class="row full-name-inputs">
+
+            <div class="input-group col-md-4 col-lg-3 input-group-sm">
+              <input type="text" placeholder="Date Début" class="form-control"
+                     [(ngModel)]="representantCommercialMoral.mail"/>
+            </div>
+            <div class="input-group col-md-4 col-lg-3 input-group-sm">
+              <input type="text" placeholder="Date Fin" class="form-control"
+                     [(ngModel)]="representantCommercialMoral.mail"/>
+            </div>
+          </div>
+          <div class="demo-radio col-sm-3">
+            <table>
+              <tr>
+                <td>
+                  <label>Technicien maintenance:</label>
+                </td>
+                <td>
+                  <label class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" name="customRadio" checked>
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Interne</span>
+                  </label>
+                </td>
+                <td>
+                  <label class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" name="customRadio">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Sous-traitant</span>
+                  </label>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="row full-name-inputs">
+
+            <div class="input-group col-md-4 col-lg-3 input-group-sm">
+              <input type="text" placeholder="Nom et prénom" class="form-control"
+                     [(ngModel)]="representantCommercialMoral.fax"/>
+            </div>
+            <div class="input-group col-md-4 col-lg-3 input-group-sm">
+              <input type="number" placeholder="N° Téléphone" class="form-control"
+                     [(ngModel)]="representantCommercialMoral.fax"/>
+            </div>
+          </div>
+          <div class="row full-name-inputs">
+
+            <div class="input-group col-md-12 col-lg-7 input-group-sm">
+              <input type="text" placeholder="Adresse" class="form-control"
+                     [(ngModel)]="representantCommercialMoral.adresse"/>
+            </div>
+          </div>
+
+          <div class="row full-name-inputs">
+            <div class="input-group col-md-12 col-lg-7 input-group-sm">
+              <textarea rows="5" placeholder="Description" class="form-control"
+                        [(ngModel)]="representantCommercialMoral.secteurActivite"></textarea>
+            </div>
+          </div>
+          <div style="text-align:right;">
+            <button nbButton style="cursor: pointer;margin: 0.5rem;align-content: center;" (click)="onAddRCM()">{{ARCM}}</button>
+            <button nbButton style="cursor: pointer;margin: 0.5rem;align-content: center;">Annuler</button>
+          </div>
+        </nb-card-body>
+      </nb-card>
+    </div>
+  </div>
+
+</div>
+
